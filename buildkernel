@@ -1,0 +1,10 @@
+echo "make clean"
+make clean
+echo "export ARCH=arm"
+export ARCH=arm
+echo "make VARIANT_DEFCONFIG=jf_eur_defconfig hacker_defconfig SELINUX_DEFCONFIG=jfselinux_defconfig"
+make VARIANT_DEFCONFIG=jf_eur_defconfig hacker_defconfig SELINUX_DEFCONFIG=jfselinux_defconfig
+echo "make"
+make
+echo "Done!"
+
